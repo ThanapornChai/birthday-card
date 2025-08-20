@@ -330,7 +330,7 @@ export default function App() {
 
                   {/* ข้อความ */}
                   <div className="md:col-span-3">
-                    <h2 className="mb-3 text-2xl font-bold text-rose-600">ความในใจของเรา</h2>
+                    <h2 className="mb-3 text-2xl font-bold text-rose-600">ความในใจถึงพ่อ</h2>
                     <p className="whitespace-pre-line text-lg leading-relaxed text-slate-700">
                       {heartfeltNote}
                     </p>
