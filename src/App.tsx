@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
+// import dad from './assets/IMG_4121.JPG'; // ใช้ภาพที่เก็บไว้ในโฟลเดอร์ assets
+const myPhoto = `${import.meta.env.BASE_URL}image/IMG_4121.JPG`; // ใช้ BASE_URL เพื่อให้แน่ใจว่าได้ URL ที่ถูกต้อง
 
 const defaultMessage = `สุขสันต์วันเกิดนะคะ
 ขอให้สุขภาพร่างกายแข็งแรง เงินทองไหลมาเทมา
@@ -318,9 +320,9 @@ export default function App() {
                       <div className="absolute -top-3 left-6 rotate-[-8deg] h-6 w-16 rounded bg-amber-200/85 shadow-sm ring-1 ring-amber-300/60" />
                       <div className="absolute -top-3 right-6 rotate-[6deg] h-6 w-16 rounded bg-amber-200/85 shadow-sm ring-1 ring-amber-300/60" />
                       <div className="rotate-[-2.5deg] rounded-xl bg-white p-3 shadow-lg ring-1 ring-rose-200/60">
+                     
                         <img
-                          src={`${import.meta.env.BASE_URL}image/IMG_4121.JPG`}
-                          alt="ความทรงจำของเรา"
+                          src={myPhoto} alt="dad"
                           className="h-64 w-[234px] rounded-lg object-cover"
                         />
                         <div className="mt-2 text-center text-xs text-slate-600">ปักหมุดความทรงจำ</div>
