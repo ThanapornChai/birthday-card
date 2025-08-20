@@ -1,9 +1,12 @@
 {
+  "homepage": "https://ThanapornChai.github.io/birthday-card",
   "name": "birthday-card",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -12,6 +15,7 @@
   "dependencies": {
     "canvas-confetti": "^1.9.3",
     "framer-motion": "^12.23.12",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
