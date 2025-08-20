@@ -319,7 +319,7 @@ export default function App() {
                       <div className="absolute -top-3 right-6 rotate-[6deg] h-6 w-16 rounded bg-amber-200/85 shadow-sm ring-1 ring-amber-300/60" />
                       <div className="rotate-[-2.5deg] rounded-xl bg-white p-3 shadow-lg ring-1 ring-rose-200/60">
                         <img
-                          src="/image/IMG_4121.JPG"
+                          src={`${import.meta.env.BASE_URL}images/IMG_4121.JPG`}
                           alt="ความทรงจำของเรา"
                           className="h-64 w-[234px] rounded-lg object-cover"
                         />
